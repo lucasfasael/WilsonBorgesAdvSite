@@ -78,7 +78,6 @@ header img {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    /* opacity: 0.3; */
 }
 
 body {
@@ -96,14 +95,24 @@ body {
 }
 
 .welcome {
+    position: absolute;
+
     display: flex;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
     width: 70%;
     height: 25%;
+    transition: 0.5s;
+    left: -100%;
+    animation: slideFromLeft 2s forwards;
 
 }
+@keyframes slideFromLeft {
+    to {
+      left: 15%;
+    }
+  }
 
 .welcome button {
     display: flex;
