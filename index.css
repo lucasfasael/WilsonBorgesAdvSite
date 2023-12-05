@@ -18,6 +18,37 @@ header img {
     height: 200px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.btnA{
+    white-space: nowrap;
+
+}
+
+.dropdown-content {
+margin-top: 20px;
+      overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0; /* Defina a opacidade para 0 para esconder inicialmente */
+    transition: opacity 0.5s;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1; /* Defina a opacidade para 1 para mostrar durante o hover */
+    height: auto;
+  }
+
 .options {
     display: flex;
     justify-content: space-evenly;
@@ -25,12 +56,29 @@ header img {
     height: 100%;
     width: 55%;
     color: rgb(244, 242, 238);
+    
 
+
+    
+}
+.options a{
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
 }
 
 .options a:hover {
     border-bottom: 3px solid #bbbbbb;
+    transition: 0.5s;
 
+
+}
+.dropdown button{
+    white-space: nowrap;
+
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
 }
 
 .options img:hover {
@@ -41,19 +89,6 @@ header img {
 .options select:hover {
     border-bottom: 3px solid #bbbbbb;
 
-}
-
-.options select {
-    background-color: transparent;
-    color: rgb(244, 242, 238);
-    border: none;
-    font-size: 18px;
-    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
-    font-weight: bold;
-}
-
-.color_select {
-    color: black;
 }
 
 .options a {
@@ -134,15 +169,19 @@ body {
 
 .welcome h1 {
     margin-bottom: 10px;
-    color: rgb(244, 242, 238);
+    color: transparent;
     font-size: 60px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
     border-bottom: 1px solid white;
-    width: 60%;
+    width: 30%;
     border-color: #ceaa79;
+    background-image: linear-gradient(to right, #b0c4de, #f0f8ff);
+    background-clip: text;
+    -webkit-background-clip: text;
 
 }
+
 
 .welcome p {
     margin-bottom: 10px;
