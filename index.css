@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
+
 }
 
 header {
@@ -23,31 +24,51 @@ header img {
     display: inline-block;
 
 }
-.btnA{
+
+.btnA {
     white-space: nowrap;
 
 }
 
+.dropdown a {
+    display: block;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
 .dropdown-content {
-margin-top: 20px;
-      overflow: hidden;
+
+    overflow: hidden;
     visibility: hidden;
     position: absolute;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    opacity: 0; /* Defina a opacidade para 0 para esconder inicialmente */
+    opacity: 0;
+    /* Defina a opacidade para 0 para esconder inicialmente */
     transition: opacity 0.5s;
-
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    visibility: visible;
-    opacity: 1; /* Defina a opacidade para 1 para mostrar durante o hover */
     height: auto;
-  }
+}
+
+.dropdown:hover .dropdown-content {
+    gap: 1rem;
+    visibility: visible;
+    opacity: 1;
+    /* Defina a opacidade para 1 para mostrar durante o hover */
+
+
+}
+
+.dropdown button {
+    white-space: nowrap;
+    background: none;
+    border: none;
+    color: rgb(244, 242, 238);
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: bold;
+}
+
 
 .options {
     display: flex;
@@ -56,30 +77,25 @@ margin-top: 20px;
     height: 100%;
     width: 55%;
     color: rgb(244, 242, 238);
-    
 
 
-    
+
+
 }
-.options a{
+
+.options a {
     border-bottom: 3px solid transparent;
     transition: 0.5s;
 }
 
 .options a:hover {
+
     border-bottom: 3px solid #bbbbbb;
     transition: 0.5s;
 
 
 }
-.dropdown button{
-    white-space: nowrap;
 
-    background: none;
-    color: white;
-    border: none;
-    font-size: 1.2rem;
-}
 
 .options img:hover {
     filter: brightness(50%);
@@ -117,7 +133,7 @@ margin-top: 20px;
 
 body {
     width: 100%;
-
+    background-color: #000000ce;
 }
 
 .welcome-container {
@@ -143,11 +159,12 @@ body {
     animation: slideFromLeft 2s forwards;
 
 }
+
 @keyframes slideFromLeft {
     to {
-      left: 15%;
+        left: 15%;
     }
-  }
+}
 
 .welcome button {
     display: flex;
@@ -176,7 +193,7 @@ body {
     border-bottom: 1px solid white;
     width: 30%;
     border-color: #ceaa79;
-    background-image: linear-gradient(to right, #b0c4de, #f0f8ff);
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
     -webkit-background-clip: text;
 
@@ -237,9 +254,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 99.13vw;
-    height: 90vh;
-    background-color: #dadada;
+    width: 100%;
+    height: 100vh;
+
     padding-top: 20px;
 }
 
@@ -275,9 +292,12 @@ body {
     font-size: 38px;
     line-height: 42px;
     font-weight: 700;
-    color: #19275D;
+    color: transparent;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .sobre-container2 h3 {
@@ -286,6 +306,7 @@ body {
     color: #19275D;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
+
 }
 
 p {
@@ -302,13 +323,14 @@ p {
     width: 700px;
     height: 700px;
     border-radius: 20px;
-    background-color: #c9c9c9c5;
+    background-color: rgb(237, 237, 237);
     padding: 20px;
 }
 
 .imagem {
     width: 700px;
     height: 700px;
+    padding: 20px;
     border-radius: 20px;
     background-image: url("https://scontent.fbsb20-1.fna.fbcdn.net/v/t1.6435-9/175199999_3758199220964471_943896496701512476_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeH-n2GMh88t9DKcLe42vGrP3y0smLH5BCzfLSyYsfkELLWLZDLCKGeeKrHpEPA6pzv6dmZat9HZKHB3gGcy0qRS&_nc_ohc=vbfw-XpDOgMAX_wH5MN&_nc_ht=scontent.fbsb20-1.fna&oh=00_AfC7nhKlr7dzIYZOkEo9y3warKWInEGMapdlhroVEfvMdg&oe=65942C3A");
     background-size: cover;
@@ -332,16 +354,16 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 99.13vw;
+    width: 100%;
     height: 80vh;
-
+    background-color: rgb(237, 237, 237);
 }
 
 .areas button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 200px;
+    width: 350px;
     padding: 10px;
     background-color: #008F14;
     border-radius: 25px 25px 25px 25px;
@@ -411,4 +433,135 @@ button img {
 
 .areas p {
     margin-top: 10px;
+}
+
+.fale-conosco-escritorio {
+    width: 100%;
+    height: 75vh;
+    background-image: url("./escritorio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+}
+
+.fale-conosco {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 42, 42, 0.867)
+}
+
+.fale-conosco-left {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 60%;
+    height: 90%;
+}
+
+.fale-conosco-right {
+    width: 40%;
+    height: 100%;
+
+}
+
+.fale-conosco-left-div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+
+}
+
+.fale-conosco form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+}
+
+.fale-conosco h1 {
+    padding-bottom: 10px;
+    font-size: 45px;
+    line-height: 42px;
+    font-weight: 700;
+    color: transparent;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fale-conosco p {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+}
+
+.fale-conosco input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #b6b4b46d;
+    border-color: 1px solid #54595f;
+    outline: none;
+
+    color: white;
+}
+
+.fale-conosco textarea {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #b6b4b46d;
+    border-color: 1px solid #54595f;
+    outline: none;
+
+    color: white;
+    resize: vertical;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+
+
+
+}
+
+.double-input {
+    display: flex;
+
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fale-conosco button {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border-color: 1px solid #54595f;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.507);
+    padding: 10px;
+    /* Substitua com a cor desejada */
 }
