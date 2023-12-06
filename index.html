@@ -13,8 +13,8 @@
     <title>Wilson Borges</title>
 </head>
 
-<header>
-    <img src="./logo.png" alt="logo_wilson">
+<header id="main-header">
+    <img class="logo" src="./logo.png" alt="logo_wilson">
     <div class="options">
         <a href="">Início</a>
         <a href="">Sobre</a>
@@ -241,6 +241,25 @@
             window.location.href = "#direitoTrabalhistaSection";
         }
     }
+
+
+
+    const header = document.getElementById('main-header');
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos <= 20) {
+    
+    header.classList.remove('shrink');
+  } else {
+    header.classList.add('shrink');
+  }
+
+  prevScrollPos = currentScrollPos;
+};
+
 </script>
 
 </html>

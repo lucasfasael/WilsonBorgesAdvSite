@@ -9,15 +9,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
-    height: 91px;
+    background-color: transparent;
+    height: 140px;
     width: 100%;
-
+    transition: height 0.3s, font-size 0.3s, background-color 0.3s;
+    position: fixed;
 }
+
 
 header img {
-    height: 200px;
+    height: 300px;
+    transition: 0.3s;
 }
+header.shrink {
+    height: 91px;
+    background-color: #000000;
+    opacity: 0.9;
+  }
+  
+  header.shrink a {
+    font-size: 20px;
+  }
+  header.shrink .logo {
+    height: 200px;
+  }
 
 .dropdown {
     position: relative;
@@ -565,3 +580,4 @@ button img {
     padding: 10px;
     /* Substitua com a cor desejada */
 }
+
