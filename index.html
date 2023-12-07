@@ -21,13 +21,13 @@
         <form id="areaForm">
 
             <div class="dropdown">
-                <button class="dropbtn">Áreas de Atuação</button>
+                <button class="dropbtn"><a style="margin: 0;" href="#area">Áreas de Atuação</a></button>
                 <div class="dropdown-content">
-                    <a href="#" class="btnA">Direito de Família</a>
-                    <a href="#" class="btnA">Direito de Família</a>
-                    <a href="#" class="btnA">Direito de Família</a>
-                    <a href="#" class="btnA">Direito de Família</a>
-                    <a href="#" class="btnA">Direito de Família</a>
+                    <a href="#" class="btnA">Direito Tributário</a>
+                    <a href="#" class="btnA">Direito Civil</a>
+                    <a href="#" class="btnA">Direito Previdenciário</a>
+                    <a href="#" class="btnA">Direito do Consumidor</a>
+                    <a href="#" class="btnA">Direito Médico</a>
                 </div>
             </div>
         </form>
@@ -163,23 +163,23 @@
         </div>
     </div>
 
-    <div class="areas">
+    <div id="area" class="areas">
         <h1>Áreas de Atuação</h1>
         <p>Veja como podemos te ajudar</p>
         <div class="direitos-container">
             <div class="container2">
                 <img src="./Favorite_duotone.svg" alt="imagem">
-                <p>DIREITO DE FAMÍLIA E SUCESSÕES</p>
+                <p>DIREITO TRIBUTÁRIO</p>
 
             </div>
             <div class="container2">
                 <img src="./Favorite_duotone.svg" alt="imagem">
-                <p>DIREITO TRABALHISTA</p>
+                <p>DIREITO CIVIL</p>
 
             </div>
             <div class="container2">
                 <img src="./Favorite_duotone.svg" alt="imagem">
-                <p>DIREITO DE PREVIDENCIÁRIO</p>
+                <p>DIREITO PREVIDENCIÁRIO</p>
 
             </div>
             <div class="container2">
@@ -189,7 +189,7 @@
             </div>
             <div class="container2">
                 <img src="./Favorite_duotone.svg" alt="imagem">
-                <p>DIREITO PÚBLICO E ADMINISTRATIVO</p>
+                <p>DIREITO MÉDICO</p>
 
             </div>
         </div>
@@ -203,10 +203,7 @@
             <div class="fale-conosco-left">
                 <div class="fale-conosco-left-div">
                     <h1>Fale Conosco</h1>
-                    <p>Para saber mais sobre nosso serviço, entre em contato através do formulário
-                    </p>
-                    <p>
-                        e solicite uma
+                    <p>Para saber mais sobre nosso serviço, entre em contato através do formulário e solicite uma
                         consulta.
                     </p>
                     <form action="." method="post">
@@ -217,14 +214,34 @@
 
                         <input placeholder="Seu melhor e-mail" type="text">
                         <textarea placeholder="mensagem" name="" id="" cols="30" rows="10"></textarea>
-                        <button>Enviar</button>
+                        <button class="pulsating-button">Enviar</button>
                     </form>
                 </div>
 
             </div>
 
             <div class="fale-conosco-right">
-
+                <div class="fale-conosco-right-row">
+                    <a href=""><img src="./Vector.png" alt="email_logo"></a>
+                    <div class="fale-conosco-redes">
+                        <h2>E-mail</h2>
+                        <p>yang@gmail.com</p>
+                    </div>
+                </div>
+                <div class="fale-conosco-right-row">
+                    <a href=""><img src="./telefone.png" alt="telefone_logo"></a>
+                    <div class="fale-conosco-redes">
+                        <h2>Telefone</h2>
+                        <p>(79) 9 9849-9973</p>
+                    </div>
+                </div>
+                <div class="fale-conosco-right-row">
+                    <a href=""><img src="./whats.png" alt="whats_logo"></a>
+                    <div class="fale-conosco-redes">
+                        <h2>WhatsApp</h2>
+                        <p>(79) 9 9849-9973</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -245,20 +262,20 @@
 
 
     const header = document.getElementById('main-header');
-let prevScrollPos = window.pageYOffset;
+    let prevScrollPos = window.pageYOffset;
 
-window.onscroll = function () {
-  const currentScrollPos = window.pageYOffset;
+    window.onscroll = function () {
+        const currentScrollPos = window.pageYOffset;
 
-  if (currentScrollPos <= 20) {
-    
-    header.classList.remove('shrink');
-  } else {
-    header.classList.add('shrink');
-  }
+        if (currentScrollPos <= 20) {
 
-  prevScrollPos = currentScrollPos;
-};
+            header.classList.remove('shrink');
+        } else {
+            header.classList.add('shrink');
+        }
+
+        prevScrollPos = currentScrollPos;
+    };
 
 </script>
 
