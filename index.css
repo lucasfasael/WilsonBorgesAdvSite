@@ -352,6 +352,10 @@ body {
 
 }
 
+.sobre p {
+    margin-top: 50px;
+}
+
 p {
 
     font-size: 15px;
