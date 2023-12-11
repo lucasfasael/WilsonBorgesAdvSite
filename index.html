@@ -200,14 +200,14 @@
                     <p>Para saber mais sobre nosso serviço, entre em contato através do formulário e solicite uma
                         consulta.
                     </p>
-                    <form action="." method="post">
+                    <form>
                         <div class="double-input">
                             <input style="width: 48%;" placeholder="Nome" type="text" name="nome">
                             <input style="width: 48%;" placeholder="Telefone" type="text" name="telefone">
                         </div>
-                    
+                
                         <input placeholder="Seu melhor e-mail" type="text" name="email">
-                        <textarea placeholder="mensagem" name="mensagem" id="" cols="30" rows="10"></textarea>
+                        <textarea placeholder="mensagem" name="mensagem" cols="30" rows="10"></textarea>
                         <button class="pulsating-button" onclick="enviarParaWhatsApp()">Enviar</button>
                     </form>
                 </div>
@@ -294,14 +294,18 @@
     };
 
     function enviarParaWhatsApp() {
-            var mensagem = document.getElementById("mensagem").value;
-            var numeroWhatsApp = "5579998499973"; // Substitua pelo número desejado
+            var nome = document.getElementsByName("nome")[0].value;
+            var telefone = document.getElementsByName("telefone")[0].value;
+            var mensagem = document.getElementsByName("mensagem")[0].value;
 
-            // Construa a URL do WhatsApp com a mensagem
-            var urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensagem);
+            // Construa a mensagem
+            var mensagemWhatsapp = "Nome: " + nome + "\nTelefone: " + telefone + "\nMensagem: " + mensagem;
 
-            // Abra a URL em uma nova janela ou guia
-            window.open(urlWhatsApp, "_blank");
+            // URL para o WhatsApp com a mensagem codificada
+            var url = "https://wa.me/5579998499973?text=" + encodeURIComponent(mensagemWhatsapp);
+
+            // Redirecionar para a URL do WhatsApp
+            window.open(url, "_blank");
         }
 </script>
 
