@@ -14,8 +14,42 @@
 </head>
 
 <header id="main-header">
-    <img class="logo" src="./logo.png" alt="logo_wilson">
-    <div class="options">
+    <div class="hamburguer" onclick="toggleMenu()" >
+        
+        <img style="width: 50px; height: 50px;" src="./Favorite.svg" alt="favorite">
+    </div>
+    <div class="menu">
+        <div class="options">
+            <a href="#welcome-container">Início</a>
+            <a href="#sobre">Sobre</a>
+            <form id="areaForm">
+    
+                <div class="dropdown">
+                    <button class="dropbtn"><a style="margin: 0;" href="#area">Áreas de Atuação</a></button>
+                    <div class="dropdown-content">
+                        <a href="#" class="btnA">Direito Tributário</a>
+                        <a href="#" class="btnA">Direito Civil</a>
+                        <a href="#" class="btnA">Direito Previdenciário</a>
+                        <a href="#" class="btnA">Direito do Consumidor</a>
+                        <a href="#" class="btnA">Direito Médico</a>
+                    </div>
+                </div>
+            </form>
+    
+            <a href="">Contato</a>
+    
+            <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0">
+                <img src="./whats.png" alt="Whats_Icon">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0">
+                <img src="./telefone.png" alt="Cell_Icon">
+            </a>
+    
+    
+        </div>
+    </div>
+    <img class="logo"  src="./logo.png" alt="logo_wilson">
+    <div class="options" id="header-grande">
         <a href="#welcome-container">Início</a>
         <a href="#sobre">Sobre</a>
         <form id="areaForm">
@@ -307,6 +341,12 @@
             // Redirecionar para a URL do WhatsApp
             window.open(url, "_blank");
         }
+        function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        var logo = document.querySelector('.logo');
+        logo.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
 </script>
 
 

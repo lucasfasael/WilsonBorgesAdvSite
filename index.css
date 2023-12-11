@@ -18,6 +18,13 @@ header {
 }
 
 
+.hamburguer{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
 header img {
     height: 300px;
     transition: 0.3s;
@@ -862,8 +869,70 @@ footer img {
         align-items: center;
         width: 100%;
         height: 30%;
-        padding: 0px 10px;
+        
     }
 }
+
+@media (max-width: 600px) {
+   footer{
+    width: 100%;
+    height: 100vh;
+   }
+   .foot-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   }
+   .foot-up-left{ 
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   }
+   .foot-up-right{
+    width: 90%;
+    margin: 0;
+   }
+   footer img{
+        width: 100%;
+        height: 300px;
+   } 
+   .foot-down{
+    height: 20vh;
+    padding: 10px;
+   }
+}
+@media (max-width: 600px) {
+    header{
+        justify-content: start;
+        
+    }
+    
+    header .options{
+        width: 100%;
+        
+    }
+    header .logo{
+        width: 80%;
+        height: auto;
+    }
+    
+
+    .hamburguer{
+        display: block;
+    }
+    
+    #header-grande{
+        display: none;
+    }
+    .options a{
+        font-size: 12px;
+    }
+}
+
+    
+    
 
 /* FIM MEDIA QUERY */
