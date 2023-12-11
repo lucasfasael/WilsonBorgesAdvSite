@@ -16,8 +16,8 @@
 <header id="main-header">
     <img class="logo" src="./logo.png" alt="logo_wilson">
     <div class="options">
-        <a href="">Início</a>
-        <a href="">Sobre</a>
+        <a href="#welcome-container">Início</a>
+        <a href="#sobre">Sobre</a>
         <form id="areaForm">
 
             <div class="dropdown">
@@ -34,10 +34,10 @@
 
         <a href="">Contato</a>
 
-        <a href="">
+        <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0">
             <img src="./whats.png" alt="Whats_Icon">
         </a>
-        <a href="">
+        <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0">
             <img src="./telefone.png" alt="Cell_Icon">
         </a>
 
@@ -47,7 +47,7 @@
 
 <body>
     <div class="escritorio">
-        <div class="welcome-container">
+        <div class="welcome-container" id="welcome-container">
             <div class="welcome">
                 <h1>
                     Bem-vindo
@@ -57,9 +57,12 @@
                     disponível para esclarecer qualquer dúvida e satisfazer os interesses de nossos clientes.
                 </p>
 
+                <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0">
                 <button>
+                    
                     <img src="./whats.png" alt="whats_logo"> Fale agora conosco!
                 </button>
+            </a>
             </div>
         </div>
     </div>
@@ -80,22 +83,23 @@
                 Ser um Escritório que preza pela formação qualificada e pela busca incessante da excelência na prestação
                 dos serviços, utilizando, para tanto, técnicas modernas e constante adaptação às novas realidades do
                 mercado jurídico. </p>
+            <div id="sobre"></div>
         </div>
         <div style="background-color: #ececec;" class="container">
             <img src="./Favorite_duotone.svg" alt="imagem">
             <h1>Valores</h1>
-            <p>
+            <p >
                 Ética, responsabilidade, compromisso, qualificação técnica, acuidade na criação das estratégias, são
                 traços marcantes e diferenciados da nossa atuação.
             </p>
         </div>
-    </div>
-
-    <div class="sobre">
+    </div >
+    
+    <div class="sobre" id="sobre">
         <p style="padding: 10px; font-size: 12px; color: #dadada;">ADVOGADO</p>
         <h1>Dr. Wilson Borges</h1>
 
-        <div class="sobre-container">
+        <div class="sobre-container" >
             <div class="sobre-container1">
                 <div class="imagem"></div>
             </div>
@@ -132,28 +136,18 @@
                     </div>
                     <div class="redes">
                         <img src="./Platform=Facebook, Color=Original.svg" alt="facebook_logo">
-                        <a href="https://www.instagram.com/advwilsonborges/">
+                        <a href="https://facebook.com/advwilsonborges/">
                             advwilsonborges
                         </a>
                     </div>
-                    <div class="redes">
-                        <img src="./Platform=TikTok, Color=Original.png" alt="tiktok_logo">
-                        <a href="https://www.instagram.com/advwilsonborges/">
-                            advwilsonborges
-                        </a>
-                    </div>
+            
                     <div class="redes">
                         <img src="./Platform=LinkedIn, Color=Original.svg" alt="linkedin_logo">
-                        <a href="https://www.instagram.com/advwilsonborges/">
-                            advwilsonborges
+                        <a href="https://www.linkedin.com/in/advwilsonborges/">
+                            Wilson Borges
                         </a>
                     </div>
-                    <div class="redes">
-                        <img src="./Platform=Telegram, Color=Original.png" alt="instagram_logo">
-                        <a href="https://www.instagram.com/advwilsonborges/">
-                            advwilsonborges
-                        </a>
-                    </div>
+                    
 
 
                     </p>
@@ -208,13 +202,13 @@
                     </p>
                     <form action="." method="post">
                         <div class="double-input">
-                            <input style="width: 48%; " placeholder="Nome" type="text">
-                            <input style="width: 48%;" placeholder="Telefone" type="text">
+                            <input style="width: 48%;" placeholder="Nome" type="text" name="nome">
+                            <input style="width: 48%;" placeholder="Telefone" type="text" name="telefone">
                         </div>
-
-                        <input placeholder="Seu melhor e-mail" type="text">
-                        <textarea placeholder="mensagem" name="" id="" cols="30" rows="10"></textarea>
-                        <button class="pulsating-button">Enviar</button>
+                    
+                        <input placeholder="Seu melhor e-mail" type="text" name="email">
+                        <textarea placeholder="mensagem" name="mensagem" id="" cols="30" rows="10"></textarea>
+                        <button class="pulsating-button" onclick="enviarParaWhatsApp()">Enviar</button>
                     </form>
                 </div>
 
@@ -222,24 +216,24 @@
 
             <div class="fale-conosco-right">
                 <div class="fale-conosco-right-row">
-                    <a href=""><img src="./Vector.png" alt="email_logo"></a>
+                    <a href="mailto:advwilsonborges@outlook.com"><img src="./Vector.png" alt="email_logo"></a>
                     <div class="fale-conosco-redes">
                         <h2>E-mail</h2>
-                        <p>yang@gmail.com</p>
+                        <p>advwilsonborges@outlook.com</p>
                     </div>
                 </div>
                 <div class="fale-conosco-right-row">
-                    <a href=""><img src="./telefone.png" alt="telefone_logo"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0"><img src="./telefone.png" alt="telefone_logo"></a>
                     <div class="fale-conosco-redes">
                         <h2>Telefone</h2>
-                        <p>(79) 9 9849-9973</p>
+                        <p>(79) 9 9910-0201</p>
                     </div>
                 </div>
                 <div class="fale-conosco-right-row">
-                    <a href=""><img src="./whats.png" alt="whats_logo"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5579999100201&text&type=phone_number&app_absent=0"><img src="./whats.png" alt="whats_logo"></a>
                     <div class="fale-conosco-redes">
                         <h2>WhatsApp</h2>
-                        <p>(79) 9 9849-9973</p>
+                        <p>(79) 9 9910-0201</p>
                     </div>
                 </div>
             </div>
@@ -254,9 +248,8 @@
                     <p>Aracaju, SE</p>
                 </div>
             </div>
-            <div class="foot-up-right">
-
-            </div>
+            <a class="foot-up-right" href="https://maps.app.goo.gl/4PmpwUh9wFMoXtVL9">
+        </a>
         </div>
         <div class="foot-down">
             <p>Copyright © 2023. Wilson Borges - Advocacia. Todos os direitos reservados.</p>
@@ -300,6 +293,18 @@
         prevScrollPos = currentScrollPos;
     };
 
+    function enviarParaWhatsApp() {
+            var mensagem = document.getElementById("mensagem").value;
+            var numeroWhatsApp = "5579998499973"; // Substitua pelo número desejado
+
+            // Construa a URL do WhatsApp com a mensagem
+            var urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensagem);
+
+            // Abra a URL em uma nova janela ou guia
+            window.open(urlWhatsApp, "_blank");
+        }
 </script>
+
+
 
 </html>

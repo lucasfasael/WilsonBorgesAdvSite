@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 header {
@@ -160,6 +160,7 @@ header.shrink .logo {
 body {
     width: 100%;
     background-color: #000000ce;
+    
 }
 
 .welcome-container {
@@ -203,6 +204,12 @@ body {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
+    cursor: pointer;
+   
+}
+.welcome a{
+    text-decoration: none;
+    
 }
 
 .welcome img {
@@ -281,8 +288,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-
+    height: 90vh;
     padding-top: 20px;
 }
 
@@ -633,6 +639,8 @@ footer {
 
 .foot-up {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 90%;
 }
@@ -643,6 +651,7 @@ footer {
     height: 10%;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .foot-down a {
@@ -651,21 +660,30 @@ footer {
 }
 
 .foot-up-left {
+    display: flex;
+    
+    align-items: start;
+    flex-direction: column;
     width: 50%;
+    height: 60%;
+    padding-left: 250px;
+   
 }
 
 .foot-up-right {
-    width: 40%;
+    width: 50%;
     height: 80%;
     background-image: url("./aracaju.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 50px;
 }
 
 footer .left-locale {
-    width: 20%;
+    
     display: flex;
+    width: 100%;
     padding-left: 25px;
     align-items: center;
 
