@@ -624,6 +624,63 @@ button img {
     /* Substitua com a cor desejada */
 }
 
+footer {
+    width: 100%;
+    height: 70vh;
+    background-color: #000000;
+    color: white;
+}
+
+.foot-up {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.foot-down {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-down a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot-up-left {
+    width: 50%;
+}
+
+.foot-up-right {
+    width: 40%;
+    height: 80%;
+    background-image: url("./aracaju.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer .left-locale {
+    width: 20%;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+
+}
+
+.left-locale img {
+    width: 20px;
+    height: 20px;
+}
+
+footer img {
+    width: 400px;
+
+}
+
 .pulsating-button {
     display: inline-block;
     padding: 10px 20px;
@@ -641,6 +698,17 @@ button img {
 /* Adicione a animação pulsante */
 .pulsating-button:hover {
     animation: pulse 1s infinite;
+}
+
+#desenvolvido img {
+    width: 30px;
+    height: 30px;
+}
+
+#desenvolvido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes pulse {
