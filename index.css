@@ -361,16 +361,16 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     border-radius: 20px;
     background-color: rgb(237, 237, 237);
     padding: 20px;
 }
 
 .imagem {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     padding: 20px;
     border-radius: 20px;
     background-image: url("https://scontent.fbsb20-1.fna.fbcdn.net/v/t1.6435-9/175199999_3758199220964471_943896496701512476_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeH-n2GMh88t9DKcLe42vGrP3y0smLH5BCzfLSyYsfkELLWLZDLCKGeeKrHpEPA6pzv6dmZat9HZKHB3gGcy0qRS&_nc_ohc=vbfw-XpDOgMAX_wH5MN&_nc_ht=scontent.fbsb20-1.fna&oh=00_AfC7nhKlr7dzIYZOkEo9y3warKWInEGMapdlhroVEfvMdg&oe=65942C3A");
