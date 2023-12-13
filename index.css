@@ -33,8 +33,7 @@ header img {
 
 header.shrink {
     height: 91px;
-    background-color: #000000;
-    opacity: 0.9;
+    background-color: #112032;
 }
 
 header.shrink a {
@@ -48,7 +47,15 @@ header.shrink .logo {
 .dropdown {
     position: relative;
     display: inline-block;
+}
 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .btnA {
@@ -57,16 +64,21 @@ header.shrink .logo {
 }
 
 .btnA:hover {
-    background-color: #ffffffa6;
-    padding: 10px 0px;
+    background-color: #f9f9f9;
     color: black;
+    
 }
 
-.dropdown a {
+.dropdown-content a {
     display: block;
-    margin-top: 20px;
-    gap: 1rem;
+    width: 200px;
+    padding: 10px;
+    color: #f9f9f9;
+    background-color: #000000;
+}
 
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
 }
 
 .dropdown-content {
@@ -80,6 +92,7 @@ header.shrink .logo {
     /* Defina a opacidade para 0 para esconder inicialmente */
     transition: opacity 0.5s;
     height: auto;
+    border-radius: 15px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,10 +124,6 @@ header.shrink .logo {
     height: 100%;
     width: 55%;
     color: rgb(244, 242, 238);
-
-
-
-
 }
 
 .options a {
@@ -124,7 +133,7 @@ header.shrink .logo {
 
 .options a:hover {
 
-    border-bottom: 3px solid #bbbbbb;
+    border-bottom: 3px solid #f9f9f9;
     transition: 0.5s;
 
 
@@ -233,7 +242,7 @@ body {
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
     border-bottom: 1px solid white;
-    width: 30%;
+    width: 40%;
     border-color: #ceaa79;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
@@ -247,7 +256,6 @@ body {
     width: 60%;
     text-align: left;
     color: #FFFFFF;
-
     font-size: 17px;
 }
 
@@ -345,15 +353,16 @@ body {
 
 .sobre-container2 h3 {
     font-size: 30px;
-    font-weight: 700;
-    color: #19275D;
+    font-weight: bold;
+    font-weight: 500;
+    color: #333;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
-    font-weight: 400;
+    
 
 }
 
 .sobre p {
-    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 p {
@@ -447,6 +456,27 @@ button img {
     width: 25%;
     color: #333;
     text-align: center;
+    transition: 0.5s;
+}
+.animate-once {
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 1s ease-in-out;
+}
+
+.container2:hover {
+    animation: none;
+     /* Remove a animação original no hover */
+    transform: translateY(-5%);
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .container2 h1 {
@@ -459,6 +489,7 @@ button img {
     font-size: 15px;
     font-weight: bold;
     padding: 0 15%;
+
 }
 
 .container2 img {
@@ -473,11 +504,11 @@ button img {
 .areas h1 {
     font-size: 45px;
     line-height: 42px;
-    font-weight: 700;
-    color: #19275D;
+    font-weight: bold;
+    color: #333;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
-    font-weight: 400;
-    border-bottom: 1px solid #ceaa79;
+    font-weight: 500;
+    border-bottom: 2px solid #ceaa79;
 
 }
 
