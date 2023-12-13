@@ -417,6 +417,11 @@ p {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
+
+}
+
+.areas a {
+    text-decoration: none;
 }
 
 button img {
@@ -634,9 +639,16 @@ button img {
     height: 45px;
     border-radius: 5px;
     color: white;
-    background-color: black;
+    background-color: rgb(35, 33, 33);
     border-color: 1px solid #54595f;
     outline: none;
+}
+
+.fale-conosco button:hover {
+    border: 1px solid white;
+    background-color: black;
+    filter: brightness(2);
+    /* Aumenta o brilho em 20% */
 }
 
 ::placeholder {
@@ -840,6 +852,8 @@ footer img {
         flex-direction: column;
     }
 
+
+
     .direitos-container {
         flex-direction: column;
         height: 80%;
@@ -849,6 +863,9 @@ footer img {
         flex-direction: column;
         height: 120vh;
     }
+
+
+
 
     .fale-conosco {
         flex-direction: column;
