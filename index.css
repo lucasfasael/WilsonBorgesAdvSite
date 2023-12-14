@@ -461,10 +461,10 @@ p {
   {
     content: '';
     position: absolute;
+    left: -50%;
     
-    right: -20px;
-    width: 60%;
-    height: 120%;
+    width: 100%;
+    height: 50%;
     background:linear-gradient(0deg,transparent,#45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -472,14 +472,16 @@ p {
   }
   .box::after
   {
+    left: -50%;
+    
     content: '';
     position: absolute;
     
-    left: -60px;
-    width: 60%;
-    height: 120%;
+    
+    width: 100%;
+    height: 50%;
     background:linear-gradient(0deg,transparent,#45f3ff);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay:  -3s;
     z-index: -1;
