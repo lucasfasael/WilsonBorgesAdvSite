@@ -195,27 +195,27 @@
         <h1>Áreas de Atuação</h1>
         <p>Veja como podemos te ajudar</p>
         <div class="direitos-container">
-            <div class="container2">
+            <div class="container2 animate-once">
                 <img src="./Favorite_duotone.svg" alt="imagem">
                 <p>DIREITO TRIBUTÁRIO</p>
 
             </div>
-            <div class="container2">
+            <div class="container2 animate-once">
                 <img src="./Favorite_duotone.svg" alt="imagem">
                 <p>DIREITO CIVIL</p>
 
             </div>
-            <div class="container2">
+            <div class="container2 animate-once">
                 <img src="./Favorite_duotone.svg" alt="imagem">
                 <p>DIREITO PREVIDENCIÁRIO</p>
 
             </div>
-            <div class="container2">
+            <div class="container2 animate-once">
                 <img src="./Favorite_duotone.svg" alt="imagem">
                 <p>DIREITO DO CONSUMIDOR</p>
 
             </div>
-            <div class="container2">
+            <div class="container2 animate-once">
                 <img src="./Favorite_duotone.svg" alt="imagem">
                 <p>DIREITO MÉDICO</p>
 
@@ -245,7 +245,8 @@
 
                         <input required placeholder="Seu melhor e-mail" type="email" name="email">
                         <textarea required placeholder="mensagem" name="mensagem" cols="30" rows="10"></textarea>
-                        <button onclick="enviarParaWhatsApp()">Enviar</button>
+                        <button class="box" onclick="enviarParaWhatsApp()"><div class="fake-box" ></div></button>
+                        
                     </form>
                 </div>
 
@@ -359,19 +360,8 @@
         var logo = document.querySelector('.logo');
         logo.style.display = (menu.style.display === 'block') ? 'none' : 'block';
     }
-    document.addEventListener("DOMContentLoaded", function () {
-    var containers = document.querySelectorAll('.container2');
+   
 
-    // Adiciona a classe para iniciar a animação apenas uma vez para cada elemento
-    containers.forEach(function (container) {
-        container.classList.add('animate-once');
-
-        // Remove a classe de animação ao ocorrer o hover
-        container.addEventListener('mouseenter', function () {
-            container.classList.remove('animate-once');
-        });
-    });
-});
 </script>
 
 
