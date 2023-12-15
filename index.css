@@ -1076,6 +1076,18 @@ footer img {
     .fale-conosco-left-div{
         width: 100%;
     }
+    .fale-conosco-right{
+        display: flex;
+        width: auto;
+        padding: 20px;
+        gap: 2rem;
+    }
+    .foot-down{
+        flex-direction: column-reverse;
+        padding: 10px;
+        width: auto;
+    }
+    
 }
 
 
