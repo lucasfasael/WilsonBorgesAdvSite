@@ -1087,7 +1087,9 @@ footer img {
         padding: 10px;
         width: auto;
     }
-    
+    .areas h1{
+        font-size: 40px;
+    }
 }
 
 
