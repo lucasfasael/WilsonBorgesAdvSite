@@ -179,7 +179,91 @@ header.shrink .logo {
     background-position: center center;
     background-attachment: fixed;
 }
+.direito-tributario-escritorio {
+    width: 100%;
+    height: 60vh;
+    background-image: url("./escritorio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.direito-tributario{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.direito-tributario-left{
+    display: flex;  
+    align-items: start;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+}
+.direito-tributario-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.direito-tributario-right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.direito-tributario button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #008F14;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
 
+}
+
+.direito-tributario a {
+    text-decoration: none;
+
+}
+
+.direito-tributario img {
+    width: 15px;
+    height: 15px;
+}
+
+.direito-tributario h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    
+    width: 40%;
+  
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+
+.direito-tributario p {
+  
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 17px;
+}
 body {
     width: 100%;
     background-color: #000000ce;
@@ -595,7 +679,8 @@ button img {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(45, 42, 42, 0.867)
+    background-color: rgba(45, 42, 42, 0.867);
+    
 }
 
 .fale-conosco-left {
@@ -670,7 +755,7 @@ button img {
     background-color: #b6b4b46d;
     border-color: 1px solid #54595f;
     outline: none;
-
+    
     color: white;
     resize: vertical;
 
@@ -727,28 +812,11 @@ button img {
     justify-content: space-between;
 }
 
-/* .fale-conosco button {
-    width: 100%;
-    height: 45px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(35, 33, 33);
-    border-color: 1px solid #54595f;
-    outline: none;
-}
-
-.fale-conosco button:hover {
-    border: 1px solid white;
-    background-color: black;
-    filter: brightness(2);
-    /* Aumenta o brilho em 20% */
-/* } */
-
-/* ::placeholder {
+ ::placeholder {
     color: rgba(255, 255, 255, 0.507);
     padding: 10px;
    
-} */ 
+} 
 
 footer {
     width: 100%;
@@ -1090,7 +1158,9 @@ footer img {
     .areas h1{
         font-size: 40px;
     }
+    
 }
+
 
 
 
