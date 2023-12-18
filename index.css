@@ -138,11 +138,8 @@ header.shrink .logo {
 }
 
 .options a:hover {
-
     border-bottom: 3px solid #f9f9f9;
     transition: 0.5s;
-
-
 }
 
 
@@ -255,7 +252,21 @@ header.shrink .logo {
     -webkit-background-clip: text;
 
 }
+.direito-tributario-escritorio h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-color: #ceaa79;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
 
+}
 
 .direito-tributario p {
   
