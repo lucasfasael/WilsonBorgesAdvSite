@@ -179,9 +179,9 @@ header.shrink .logo {
 .direito-tributario-escritorio {
     width: 100%;
     height: 60vh;
-    background-image: url("./escritorio.jpg");
+    background-image: url("./direito_tributario.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-attachment: fixed;
 }
