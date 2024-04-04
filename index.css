@@ -499,6 +499,7 @@ p {
     cursor: pointer;
     transition: 0.5s;
 }
+
 .fake-box{
     border: none;
     display: flex;
@@ -561,7 +562,7 @@ p {
     height: 550px;
     padding: 20px;
     border-radius: 20px;
-    background-image: url("https://scontent.fbsb20-1.fna.fbcdn.net/v/t1.6435-9/175199999_3758199220964471_943896496701512476_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_eui2=AeH-n2GMh88t9DKcLe42vGrP3y0smLH5BCzfLSyYsfkELLWLZDLCKGeeKrHpEPA6pzv6dmZat9HZKHB3gGcy0qRS&_nc_ohc=vbfw-XpDOgMAX_wH5MN&_nc_ht=scontent.fbsb20-1.fna&oh=00_AfC7nhKlr7dzIYZOkEo9y3warKWInEGMapdlhroVEfvMdg&oe=65942C3A");
+    background-image: url("./yang.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -851,9 +852,23 @@ footer p{
     display: flex;
     width: 100%;
     height: 10%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+   
 
+}
+
+.foot-down-left{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    
+    
+}
+.foot-down-left p{
+    margin: 0 40px;
 }
 
 .foot-down a {
@@ -863,29 +878,29 @@ footer p{
 
 .foot-up-left {
     display: flex;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 50%;
     height: 60%;
-    padding-left: 250px;
+  
 
 }
 
 .foot-up-right {
-    width: 50%;
+    
+    width: 40%;
     height: 80%;
-    background-image: url("./aracaju.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 50px;
+    
+
 }
 
 footer .left-locale {
 
     display: flex;
-    width: 100%;
-    padding-left: 25px;
+    width: 40%;
+    padding-left: 20px;
+   
     align-items: center;
 
 }
@@ -910,6 +925,11 @@ footer img {
     position: relative;
     overflow: hidden;
     transition: all .3s;
+    width: 50%;
+}
+.fake-box p{
+    text-align: center;
+    padding: 0;
 }
 
 /* Adicione a animação pulsante */
@@ -1090,9 +1110,11 @@ footer img {
 
     .foot-up-left {
         padding: 0;
+        
         width: 100%;
         height: 100%;
     }
+   
     footer .left-locale{
         padding-left: 0;
     }
