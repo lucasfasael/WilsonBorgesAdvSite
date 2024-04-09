@@ -4,7 +4,28 @@
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
-  
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #353333; /* Cor do indicador da barra de rolagem */
+
+}
+
+/* Firefox */
+body {
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+}
+
+body {
+    scrollbar-color: #888 #f1f1f1; /* Cor do indicador da barra de rolagem */
+}
   
 header {
     display: flex;
@@ -170,7 +191,7 @@ header.shrink .logo {
 .escritorio {
     width: 100%;
     height: 100vh;
-    background-image: url("./escritorio.jpg");
+    background-image: url("../images/escritorio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -179,7 +200,7 @@ header.shrink .logo {
 .direito-tributario-escritorio {
     width: 100%;
     height: 60vh;
-    background-image: url("./direito_tributario.jpg");
+    background-image: url("../images/direito_tributario.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -269,6 +290,304 @@ header.shrink .logo {
 }
 
 .direito-tributario p {
+  
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+.direito-previdenciario-escritorio {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/direito_previdenciario.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.direito-previdenciario{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.direito-previdenciario-left{
+    display: flex;  
+    align-items: start;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+}
+.direito-previdenciario-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.direito-previdenciario-right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.direito-previdenciario button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #008F14;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.direito-previdenciario a {
+    text-decoration: none;
+
+}
+
+.direito-previdenciario img {
+    width: 15px;
+    height: 15px;
+}
+
+.direito-previdenciario h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    
+    width: 40%;
+  
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.direito-previdenciario-escritorio h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-color: #ceaa79;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+
+}
+
+.direito-previdenciario p {
+  
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+.direito-civil-escritorio {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/direito_civil.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.direito-civil{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.direito-civil-left{
+    display: flex;  
+    align-items: start;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+}
+.direito-civil-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.direito-civil-right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.direito-civil button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #008F14;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.direito-civil a {
+    text-decoration: none;
+
+}
+
+.direito-civil img {
+    width: 15px;
+    height: 15px;
+}
+
+.direito-civil h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    
+    width: 40%;
+  
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.direito-civil-escritorio h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-color: #ceaa79;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+
+}
+
+.direito-civil p {
+  
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.direito-medico-escritorio {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/direito_medico.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.direito-medico{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.direito-medico-left{
+    display: flex;  
+    align-items: start;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+}
+.direito-medico-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.direito-medico-right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.direito-medico button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #008F14;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.direito-medico a {
+    text-decoration: none;
+
+}
+
+.direito-medico img {
+    width: 15px;
+    height: 15px;
+}
+
+.direito-medico h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    
+    width: 40%;
+  
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.direito-medico-escritorio h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-color: #ceaa79;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+
+}
+
+.direito-medico p {
   
     width: 100%;
     text-align: left;
@@ -562,7 +881,7 @@ p {
     height: 550px;
     padding: 20px;
     border-radius: 20px;
-    background-image: url("./yang.jpg");
+    background-image: url("../images/yang.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -679,7 +998,7 @@ button img {
 .fale-conosco-escritorio {
     width: 100%;
     height: 75vh;
-    background-image: url("./escritorio.jpg");
+    background-image: url("../images/escritorio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -862,14 +1181,12 @@ footer p{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 50%;
+    width: 43%;
     height: 100%;
-    
+
     
 }
-.foot-down-left p{
-    margin: 0 40px;
-}
+
 
 .foot-down a {
     color: white;
@@ -925,7 +1242,7 @@ footer img {
     position: relative;
     overflow: hidden;
     transition: all .3s;
-    width: 50%;
+    width: 43%;
 }
 .fake-box p{
     text-align: center;
