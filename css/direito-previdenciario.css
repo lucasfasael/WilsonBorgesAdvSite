@@ -56,10 +56,51 @@
     margin-bottom: 10px;
 }
 .servicos{
-    height: 100vh;
     width: 100%;
-    
+    height: 150vh;  
 }
+.servicos-box-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+   
+}
+.servicos-box-bot{
+    width: 100%;
+    height: 85%;
+  
+}
+.servicos p{
+    
+    text-align: left;
+    color: #7dbaff;
+    font-size: 17px;
+}
+.servicos h3{
+    
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+}
+.servicos-box-linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 400px;
+}
+.linha-box{
+    height: 350px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
 .direito-previdenciario button {
     display: flex;
     justify-content: space-evenly;
@@ -113,14 +154,14 @@
     -webkit-background-clip: text;
 
 }
-.welcome-text h2 {
+h2 {
     margin-bottom: 10px;
     color: transparent;
     font-size: 45px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: bold;
     
-    width: 100%;
+    
   
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
@@ -155,3 +196,4 @@
     color: #FFFFFF;
     font-size: 20px;
 }
+
