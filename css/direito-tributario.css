@@ -1,0 +1,99 @@
+.direito-tributario-escritorio {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/direito_tributario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.direito-tributario{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.direito-tributario-left{
+    display: flex;  
+    align-items: start;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+}
+.direito-tributario-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.direito-tributario-right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.direito-tributario button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #008F14;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.direito-tributario a {
+    text-decoration: none;
+
+}
+
+.direito-tributario img {
+    width: 15px;
+    height: 15px;
+}
+
+.direito-tributario h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    
+    width: 40%;
+  
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.direito-tributario-escritorio h1 {
+    margin-bottom: 10px;
+    color: transparent;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    border-color: #ceaa79;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+
+}
+
+.direito-tributario p {
+  
+    width: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 17px;
+}
