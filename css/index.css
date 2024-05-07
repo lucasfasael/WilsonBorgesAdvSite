@@ -558,6 +558,7 @@ button img {
     color: #333;
     text-align: center;
     transition: 0.5s;
+   padding: 20px;
 }
 
 .container2:hover {
@@ -576,14 +577,19 @@ button img {
     padding: 0 15%;
 
 }
-
-.container2 img {
+.container2-fake{
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 60px;
     height: 60px;
     border-radius: 50px;
     margin-bottom: 10px;
     background-color: #303030;
     padding: 20px;
+}   
+.container2 img {
+    height: 100%;
 }
 
 .areas h1 {
