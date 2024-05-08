@@ -512,8 +512,8 @@ p {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
     background-color: rgb(237, 237, 237);
+    padding: 25px 0px;
 }
 
 .areas button {
@@ -971,7 +971,6 @@ footer img {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        height: 150vh;
         width: 100%;
         flex-direction: column;
     }
