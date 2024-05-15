@@ -7,34 +7,41 @@
     background-position: center center;
     background-attachment: fixed;
 }
-.direito-consumidor{
+
+.direito-consumidor {
     display: flex;
-    height: 70vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.direito-consumidor-left{
-    display: flex;  
+
+.direito-consumidor-left {
+    display: flex;
     align-items: start;
     flex-direction: column;
     height: 70%;
     width: 25%;
 }
-.direito-consumidor-right{
+
+.direito-consumidor-right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
     width: 40%;
+    gap: 1rem;
 }
-.direito-consumidor-right-box{
+
+.direito-consumidor-right-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .direito-consumidor button {
     display: flex;
     justify-content: space-evenly;
@@ -66,14 +73,15 @@
     font-size: 60px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
-    
+
     width: 40%;
-  
+
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
     -webkit-background-clip: text;
 
 }
+
 .direito-consumidor-escritorio h1 {
     margin-bottom: 10px;
     color: transparent;
@@ -91,7 +99,7 @@
 }
 
 .direito-consumidor p {
-  
+
     width: 100%;
     text-align: left;
     color: #FFFFFF;
@@ -100,65 +108,75 @@
 
 @media (max-width: 600px) {
 
-    .direito-consumidor-escritorio{
-     height: 100vh;
+    .direito-consumidor-escritorio {
+        height: 100vh;
     }
-    .direito-consumidor{
-     flex-direction: column;
-     height: auto;
-     gap: 0.8rem;
+
+    .direito-consumidor {
+        flex-direction: column;
+        height: auto;
+        gap: 0.8rem;
     }
-    .direito-consumidor-left{
-     width: 100%;
-     justify-content: center;
-     align-items: center;
-     height: auto;
- 
- }
- .direito-consumidor-left h1{
-     margin-top: 30px;
- }
- .direito-consumidor-left a{
-     width: 90%;
-     
- }
- .direito-consumidor-left button{
-     display: none;
- }
- .pulsating-button img{
-     margin-right: 15px;
- }
- .direito-consumidor-right{
-     width: 100%;
-     height: auto;
-     gap: 0.8rem;
- }
- 
- .direito-consumidor-right-box p{
-     text-align: center;
- }
- .none{
-     display: flex;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     width: 90%;
-     justify-content: center;
-     align-items: center;
- }
- .none img{
-     width: 30px;
-     height: 30px;
- }
- 
- .none a{
-     width: 100%;
-     height: 60px;
-     
- }
- .none button{
-     width: 100%;
-     height: 60px;
-     font-size: 25px;
- }
- 
- }
+
+    .direito-consumidor-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .direito-consumidor-left h1 {
+        margin-top: 30px;
+    }
+
+    .direito-consumidor-left a {
+        width: 90%;
+
+    }
+
+    .direito-consumidor-left button {
+        display: none;
+    }
+
+    .pulsating-button img {
+        margin-right: 15px;
+    }
+
+    .direito-consumidor-right {
+        width: 100%;
+        height: auto;
+        gap: 0.8rem;
+    }
+
+    .direito-consumidor-right-box p {
+        text-align: center;
+    }
+
+    .none {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .none img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .none a {
+        width: 100%;
+        height: 60px;
+
+    }
+
+    .none button {
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+    }
+
+}

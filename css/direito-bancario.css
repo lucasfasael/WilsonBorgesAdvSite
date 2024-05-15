@@ -1,4 +1,3 @@
-
 .direito-bancario-escritorio {
     width: 100%;
     height: 60vh;
@@ -8,34 +7,41 @@
     background-position: bottom center;
     background-attachment: fixed;
 }
-.direito-bancario{
+
+.direito-bancario {
     display: flex;
-    height: 70vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.direito-bancario-left{
-    display: flex;  
+
+.direito-bancario-left {
+    display: flex;
     align-items: start;
     flex-direction: column;
     height: 70%;
     width: 25%;
 }
-.direito-bancario-right{
+
+.direito-bancario-right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
     width: 40%;
+    gap: 1rem;
 }
-.direito-bancario-right-box{
+
+.direito-bancario-right-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .direito-bancario button {
     display: flex;
     justify-content: space-evenly;
@@ -67,14 +73,15 @@
     font-size: 60px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
-    
+
     width: 40%;
-  
+
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
     -webkit-background-clip: text;
 
 }
+
 .direito-bancario-escritorio h1 {
     margin-bottom: 10px;
     color: transparent;
@@ -92,7 +99,7 @@
 }
 
 .direito-bancario p {
-  
+
     width: 100%;
     text-align: left;
     color: #FFFFFF;
@@ -101,69 +108,79 @@
 
 @media (max-width: 600px) {
 
-    .direito-bancario-escritorio{
-     height: 100vh;
+    .direito-bancario-escritorio {
+        height: 100vh;
     }
-    .direito-bancario{
-     flex-direction: column;
-     height: auto;
-     gap: 0.8rem;
-    }
-    .direito-bancario-left{
-     width: 100%;
-     justify-content: center;
-     align-items: center;
-     height: auto;
- 
- }
- .direito-bancario-left h1{
-     margin-top: 30px;
- }
- .direito-bancario-left a{
-     width: 90%;
-     
- }
- .direito-bancario-left button{
-     display: none;
- }
- .pulsating-button img{
-     margin-right: 15px;
- }
- .direito-bancario-right{
-     width: 100%;
-     height: auto;
-     gap: 0.8rem;
- }
- 
- .direito-bancario-right-box p{
-     text-align: center;
- }
- .none{
-     display: flex;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     width: 90%;
-     justify-content: center;
-     align-items: center;
- }
- .none img{
-     width: 30px;
-     height: 30px;
- }
- 
- .none a{
-     width: 100%;
-     height: 60px;
-     
- }
- .none button{
-     width: 100%;
-     height: 60px;
-     font-size: 25px;
- }
- 
- }
 
- .welcome-container{
+    .direito-bancario {
+        flex-direction: column;
+        height: auto;
+        gap: 0.8rem;
+    }
+
+    .direito-bancario-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .direito-bancario-left h1 {
+        margin-top: 30px;
+    }
+
+    .direito-bancario-left a {
+        width: 90%;
+
+    }
+
+    .direito-bancario-left button {
+        display: none;
+    }
+
+    .pulsating-button img {
+        margin-right: 15px;
+    }
+
+    .direito-bancario-right {
+        width: 100%;
+        height: auto;
+        gap: 0.8rem;
+    }
+
+    .direito-bancario-right-box p {
+        text-align: center;
+    }
+
+    .none {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .none img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .none a {
+        width: 100%;
+        height: 60px;
+
+    }
+
+    .none button {
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+    }
+
+}
+
+.welcome-container {
     background-color: #000000ad;
- }
+}
