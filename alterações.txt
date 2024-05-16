@@ -3,26 +3,32 @@ páginas dos direitos, mudar estrutura do texto para o exemplo do discord.
 -também mudar o tamanho da imagem principal para maior igual o do exemplo.
 -risco dourado na lateral do texto principal igual o exemplo.
 
-página previdenciário, textos grandes, diminuir, botão bugado cortado na metade.
 
-página inicial, texto grande do paragrafo grande, tá em 3 linhas no do yang, no meu 2 e no dele grudado no meu separado.
-- cards missão, etc grudados no dele e no meu não
+
+
+~~~~~~~~~~~~FEITO~~~~~~~~~~~~~~
+
 -35vh logo wb
+LOGO PRINCIPAL WB NO DELE GIGANTE NO MEU NORMAL.
 -1rem gap container texto
 -p do bem vindo 15px
 -1250px = 15px font
 -acima = 17px font
 
+página inicial, texto grande do paragrafo grande, tá em 3 linhas no do yang, no meu 2 e no dele grudado no meu separado.
+- cards missão, etc grudados no dele e no meu não
+
+página previdenciário, textos grandes, diminuir, botão bugado cortado na metade.
+
 página inicial, borda do enviar bugado no dele.
 -inverter direito bancário com tributário e quando clickar redirecionar, nas áreas de atuação inverter também.
-
-
-LOGO PRINCIPAL WB NO DELE GIGANTE NO MEU NORMAL.
-
 
 Ordem:
 -bancário 
 -previdenciário 
 -civil 
 -consumidor 
+-tributario
 -medico
+
+
