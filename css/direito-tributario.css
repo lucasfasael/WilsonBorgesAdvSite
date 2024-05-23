@@ -99,9 +99,7 @@ strong{
     font-size: 60px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
-
     width: 40%;
-
     background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
     background-clip: text;
     -webkit-background-clip: text;
@@ -109,7 +107,7 @@ strong{
 }
 
 .direito-tributario-escritorio h1 {
-    margin-bottom: 10px;
+    margin-top: 20px;
     color: transparent;
     font-size: 60px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
@@ -204,5 +202,8 @@ strong{
         height: 60px;
         font-size: 25px;
     }
-
+    .seta-index{
+        bottom: 33.3%;
+        left: 37%;
+    }
 }
