@@ -239,6 +239,7 @@ body {
     height: 25%;
     transition: 0.5s;
     left: -100%;
+    top: 35%;
     animation: slideFromLeft 2s forwards;
     gap: 2rem;
 }
@@ -280,9 +281,9 @@ body {
     color: white;
     font-size: 60px;
     font-weight: 400;
-    border-bottom: 1px solid white;
+    border-bottom: 2.5px solid white;
     width: 40%;
-    border-color: #ceaa79;
+    border-color: rgb(180, 148, 4);
 }
 
 
