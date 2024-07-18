@@ -1170,6 +1170,9 @@ footer .logo2{
     header{
         margin-top: -20px;
     }
+    header.shrink{
+        margin-top: 0;
+    }
     .welcome h1 {   
         font-size: 55px;
 
