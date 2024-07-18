@@ -239,7 +239,6 @@ body {
     height: 25%;
     transition: 0.5s;
     left: -100%;
-    bottom: 45%;
     animation: slideFromLeft 2s forwards;
     gap: 2rem;
 }
@@ -1161,11 +1160,15 @@ footer .logo2{
     }
 }
 
-@media (max-width:1250px) {
+@media (max-width:1600px) {
 
-    .welcome p {
-        font-size: 15px;
+    .welcome h1 {
+        font-size: 55px;
 
+    }
+
+    .welcome p{
+        font-size: 17px;
     }
 }
 
