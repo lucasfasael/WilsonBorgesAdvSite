@@ -239,7 +239,7 @@ body {
     height: 25%;
     transition: 0.5s;
     left: -100%;
-    top: 35%;
+    bottom: 45%;
     animation: slideFromLeft 2s forwards;
     gap: 2rem;
 }
