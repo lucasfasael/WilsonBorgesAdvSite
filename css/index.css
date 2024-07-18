@@ -67,7 +67,11 @@ header.shrink {
 
 header.shrink a {
     font-size: 20px;
-    color: #000000;
+    color: black;
+}
+
+header.shrink .dropdown-content a{
+    color: white;
 }
 
 header.shrink .logo {
@@ -103,7 +107,7 @@ header.shrink img{
 
 .btnA:hover {
     background-color: #f9f9f9;
-    color: black;
+    color: white;
 
 }
 
@@ -112,11 +116,13 @@ header.shrink img{
     width: 200px;
     padding: 10px;
     color: #f9f9f9;
-    background-color: #000000;
+    background-color: #595757;
 }
 
+
+
 .dropdown-content a:hover {
-    background-color: #f9f9f9;
+    background-color: #001A32;
 }
 
 .dropdown-content {
@@ -282,7 +288,7 @@ body {
     font-weight: 400;
     border-bottom: 2.5px solid white;
     width: 40%;
-    border-color: rgb(180, 148, 4);
+    border-color: #ceaa79;
 }
 
 
