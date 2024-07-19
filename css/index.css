@@ -83,6 +83,10 @@ header.shrink img{
     filter: brightness(0);
 }
 
+header.shrink a:hover{
+    border-color: black;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -221,7 +225,7 @@ header.shrink img{
 
 body {
     width: 100%;
-    background-color: #001A32;
+    background-color: white;
 
 }
 
@@ -348,6 +352,7 @@ body {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 100px;
+    background-color: #001A32;
 }
 
 .sobre-container {
@@ -1097,8 +1102,8 @@ footer .logo2{
 
 @media (max-width: 600px) {
     header {
-        justify-content: space-around;
-
+        justify-content: space-between;
+        
     }
 
     header .options {
@@ -1107,13 +1112,22 @@ footer .logo2{
     }
 
     header .logo {
-        width: 80%;
+        width: 50%;
         height: auto;
+        
     }
 
+    header.shrink .logo{
+        width: 40%;
+        height: auto;
+    }
+    .welcome-container h1{
+        text-align: center;
+    }
 
     .hamburguer {
         display: block;
+        margin-right: 8px;
     }
 
     #header-grande {
