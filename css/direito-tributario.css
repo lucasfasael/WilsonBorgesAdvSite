@@ -1,3 +1,6 @@
+.welcome-container{
+    background-color: transparent;
+}
 .seta-index{
     display: flex;
     justify-content: center;
