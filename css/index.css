@@ -196,7 +196,7 @@ header.shrink a:hover{
 }
 
 .options a {
-    color: rgb(244, 242, 238);
+    color: white;
     text-decoration: none;
     font-size: 18px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
@@ -353,6 +353,11 @@ body {
     padding-top: 20px;
     padding-bottom: 100px;
     background-color: #001A32;
+    border-radius: 20px;
+    background-image: url("../images/Default_Create_a_highly_realistic_image_of_a_moderately_clutte_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sobre-container {
@@ -382,17 +387,15 @@ body {
     height: 100%;
 
 }
-
+.sobre-container2 img{
+    filter: brightness(2);
+}
 .sobre h1 {
-    font-size: 38px;
+    font-size: 55px;
     line-height: 42px;
-    font-weight: 700;
-    color: transparent;
+    font-weight: 350;
+    color: white;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
-    font-weight: 400;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(180, 174, 174), rgb(255, 255, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
     margin-bottom: 10px;
 }
 
@@ -400,18 +403,22 @@ body {
     font-size: 30px;
     font-weight: bold;
     font-weight: 500;
-    color: #333;
+    color: white;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
-
+    
 
 }
 
 .sobre p {
     margin-bottom: 30px;
+    color: white;
+}
+.sobre a{
+    color: white;
 }
 
 p {
-
+    
     font-size: 15px;
     text-shadow: rgba(0, 0, 0, 0.48) 5px 4px 10px;
     font-weight: 400;
@@ -424,8 +431,13 @@ p {
     width: 550px;
     height: 550px;
     border-radius: 20px;
-    background-color: rgb(237, 237, 237);
     padding: 20px;
+    background: rgba(0, 0, 0, 0.46);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .box {
@@ -501,16 +513,6 @@ p {
     }
 }
 
-.imagem {
-    width: 550px;
-    height: 550px;
-    padding: 20px;
-    border-radius: 20px;
-    background-image: url("../images/yang.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .redes {
     display: flex;
@@ -969,6 +971,7 @@ footer .logo2{
         width: 100%;
         padding-top: 40px;
         padding-bottom: 50px;
+        
     }
 
 
@@ -1127,7 +1130,7 @@ footer .logo2{
 
     .hamburguer {
         display: block;
-        margin-right: 8px;
+     
     }
 
     #header-grande {
@@ -1176,7 +1179,14 @@ footer .logo2{
         border-left: none;
     }
     .seta-index{
-        bottom: 15px;
+       bottom: 15px;
+    }
+    .sobre-container2 h3{
+        text-align: center;
+        font-size: 32px;
+    }
+    .sobre-container2 p{
+        font-size: 20px;
     }
 }
 
