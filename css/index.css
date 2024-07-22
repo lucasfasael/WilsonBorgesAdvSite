@@ -791,7 +791,7 @@ footer {
 }
 
 footer img{
-    filter: brightness(0);
+    filter: brightness(1);
 }
 
 footer p {
@@ -861,6 +861,7 @@ footer .left-locale {
 .left-locale img {
     width: 20px;
     height: 20px;
+    filter: brightness(0);
 }
 
 footer img {
@@ -1187,6 +1188,10 @@ footer .logo2{
     }
     .sobre-container2 p{
         font-size: 20px;
+    }
+    footer img{
+        width: 80%;
+        height: auto;
     }
 }
 
